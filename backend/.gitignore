@@ -18,7 +18,8 @@ Thumbs.db
 .idea/
 
 # Database (optional)
-database.sqlite
+database.js
+tasks_db.db
 # Dependencies
 package-lock.json
 package.json

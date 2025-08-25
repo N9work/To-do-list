@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>To-do List</h1>
+
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="เพิ่มงานใหม่..." required>
+            <button type="submit">เพิ่ม</button>
+        </form>
+        <div class="filter">
+            <button onclick="filterTasks('all')">ทั้งหมด</button>
+            <button onclick="filterTasks('pending')">ยังไม่เสร็จ</button>
+            <button onclick="filterTasks('completed')">เสร็จแล้ว</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
